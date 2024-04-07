@@ -1,7 +1,7 @@
 # Site
 title:              Lomond Robotics
-bio:                'Robotics, Engeneering, Hardware, Software, and custum solutions.'
-description:        "Robotics, Engeneering, Hardware, Software, and custum solutions."
+bio:                'Robotics, Engeneering, 3D Print, Hardware and Software solutions'
+description:        "Robotics, Engeneering, 3D Print, Hardware and Software solutions"
 locale:             en_UK
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -18,8 +18,8 @@ github:             default
 
 # personal
 location:           Scotland, UK
-# phone:              310-318-5555
-# email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+phone:              077591 81863
+email:              jirasekphd@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg

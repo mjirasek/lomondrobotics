@@ -50,10 +50,13 @@ changefreq: weekly
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<h2><a href="#">Lomond Robotics is a consultacncy company</a></h2>
-					<p>With only a few edits, you can have a stunningly beautiful website <br />
-						nearly out of the box. Of course... you can always take it further <br />
-						and make it something even more amazing!</p>
+					<h2><a href="#">Robotics, Engeneering, 3D Print, Hardware and Software solutions</a></h2>
+					<p>Do you want to automatise your process? 
+						Are you seeking to design and prototype new machine. 
+						Do you want to use AI to make your company more efficient?
+						Our Scotish company is ready to provide you the right solution for your type of problem 
+						and scale. 
+						From custom 3D print worth £10 to automatising proceess of a chemical plant. </p>
 				</header>
 				<a href="#" class="image main"><img src="{{ " /images/pic01.jpg" | absolute_url }}" alt="" /></a>
 				<p>Regardless of your website's function, the homepage is what brings the user in.
@@ -73,7 +76,9 @@ changefreq: weekly
 			</article>
 
 			<!-- Posts -->
-			<section class="posts">
+			<!-- I disabled the posts section because it's not necessary for the homepage. -->
+			<!-- If you want to enable it, just remove the comments below. -->
+			<!-- <section class="posts">
 				{% for post in site.posts limit:3 %}
 				{% assign mod3 = forloop.index | modulo: 3 %}
 				<article>
@@ -98,14 +103,14 @@ changefreq: weekly
 				{% endif %}
 				{% endfor %}
 
-			</section>
+			</section> -->
 
 			<!-- Footer -->
-			<footer>
+			<!-- <footer>
 				<ul class="actions">
 					<li><a href="{{ " /blog/" | absolute_url }}" class="button">Our Blog</a></li>
 				</ul>
-			</footer>
+			</footer> -->
 
 		</div>
 
