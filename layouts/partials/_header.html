@@ -1,5 +1,0 @@
-{{ $data := (.Scratch.Get "content").PersonalData }}
-{{ with $data }}
-<h1>{{ .Name }} {{ .Suffix }}</h1>
-<div class="subtitle">{{ .CurrentWorkplace }}</div>
-{{ end }}
