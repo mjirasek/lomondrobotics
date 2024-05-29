@@ -1,14 +1,11 @@
-[contact_name]
-other = "Name"
+[sidebar_heading_1]
+other = "Just a Subheading"
 
-[contact_email]
-other = "Email"
+[sidebar_button_1]
+other = "Continue Reading"
 
-[contact_message]
-other = "Message"
+[sidebar_heading_2]
+other = "Another Subheading"
 
-[contact_submit]
-other = "Send Message"
-
-[language_select]
-other = "Select language"
+[sidebar_button_2]
+other = "More Random Links"
