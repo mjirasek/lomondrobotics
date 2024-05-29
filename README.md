@@ -1,43 +1,173 @@
-# Hugo HTML5 UP Arcana
+# Flex-BP hugo CV
 
-This is a [Hugo](https://gohugo.io/) port of the
-[Arcana template](https://html5up.net/arcana) from
-[HTML5 UP](https://html5up.net/).
-Check out the [live demo](https://sec.gd/hugo/themes/arcana/).
+Flexbox based Hugo CV theme which provides out of the box best practices like performance and SEO readiness. Using [hugo-best-practices](https://github.com/spech66/hugo-best-practices), [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist) and the [Front-End Performance Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist).
 
-[![Screenshot](https://raw.githubusercontent.com/half-duplex/hugo-arcana/main/images/tn.png)](https://raw.githubusercontent.com/half-duplex/hugo-arcana/main/images/screenshot.png)
+Other themes by Sebastian Pech: [Bootstrap-BP](https://github.com/spech66/bootstrap-bp-hugo-theme), [Materialize-BP](https://github.com/spech66/materialize-bp-hugo-theme),
+[Bootstrap-BP hugo startpage](https://github.com/spech66/bootstrap-bp-hugo-startpage).
 
-## Configuration
-See the exampleSite folder. The elements on the homepage are defined in
-`data/homepage.yml`, where you can choose which appear and configure them.
+## Table of contents
 
-In case of multilingual websites, you can define your homepage within
-the language directory of the specific language,
-e.g. `data/en/homepage.yml` for English.
-If the configuration does not exist, the content in `data/homepage.yml` is used.
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-The mostly-empty `_index.md` files are required for marking of the active menu
-item to work correctly.
 
-You can add your own styles in your site's `assets/sass/custom.scss`, which is
-included at the end of the theme's `main.scss`.
+- [Flex-BP hugo CV](#flex-bp-hugo-cv)
+  - [Table of contents](#table-of-contents)
+  - [Features](#features)
+  - [Install the theme](#install-the-theme)
+  - [Update the theme](#update-the-theme)
+  - [Run example site](#run-example-site)
+  - [Configuration and theme specific settings](#configuration-and-theme-specific-settings)
+  - [Screenshots of cofigurations](#screenshots-of-cofigurations)
+  - [Google Analytics](#google-analytics)
+  - [Schema.org support](#schemaorg-support)
+  - [Social Icons](#social-icons)
+  - [Custom CSS/JS](#custom-cssjs)
+  - [Misc](#misc)
 
-## Multilingual
-Translations for template content like the contact form
-are located in the `i18n` directory.
-Please feel free to contribute more languages into this directory.
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Showcase
-If you use this theme and would like to be listed here, add your site in a pull
-request!
-- [Theme Demo Site](https://sec.gd/hugo/themes/arcana/)
-- [Alichampi](https://alichampi.com/)
-- [Odesa Regional Organization of Red Cross Society of Ukraine](https://od.redcross.org.ua/)
+## Features
 
-## Contributing
-Pull requests welcome! This is my first Hugo theme, and I expect there are some
-things I've done sub-optimally.
+- Color themes
+- Print css media
+- SEO best practices supported (Schema.org, open graph, meta information, ...)
+- Automatically resizing of images
+- One minified file per ressource only (js, css)
+- CDN font support (Google Fonts, ...)
+- Settings for easy customization of layouts and features
+- Icons for Social Media
+- Custom css/js
+- Multilingual and i18n support
+- ...
 
-## Thanks
-I borrowed a good amount of structure and useful bits from
-[hugo-html5up-alpha](https://github.com/dewittn/hugo-html5up-alpha)
+## Install the theme
+
+With Git installed, run the following commands inside the Hugo site folder. If Hugo has not yet been installed, read the setup guide [here](https://gohugo.io/getting-started/quick-start/).
+
+```sh
+mkdir themes
+cd themes
+git clone https://github.com/spech66/flex-bp-hugo-cv.git
+```
+
+You can get a zip of the latest version of the theme from the [home page](https://github.com/spech66/flex-bp-hugo-cv) and extract it to the themes folder.
+
+## Update the theme
+
+Go to the themes folder as in the installation and run the following command.
+
+```sh
+git pull
+```
+
+## Run example site
+
+Go to the `exampleSite` folder from the theme `themes/flex-bp-hugo-cv/exampleSite` and run the following command.
+
+```sh
+hugo server --themesDir ../.. --minify
+```
+
+## Configuration and theme specific settings
+
+None yet. See `config.toml` in the `exampleSite` folder for best settings.
+
+Best run with `--minify` flag for hugo.
+
+## Screenshots of cofigurations
+
+![CV Theme](https://raw.githubusercontent.com/spech66/flex-bp-hugo-cv/main/images/tn.png)
+
+## Google Analytics
+
+The native Hugo Google Analytics template has been removed!
+
+## Schema.org support
+
+Provide one author to enable the Schema.org support.
+
+```yaml
+[Author]  
+  name = "Sebastian Pech"
+```
+
+## Social Icons
+
+Icons for Social Media. Add the block to the config.
+
+```yaml
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted.
+# Code from https://themes.gohugo.io/future-imperfect/ theme
+[social]
+  # Coding Communities
+  github           = ""
+  gitlab           = ""
+  stackoverflow    = "" # User Number
+  bitbucket        = ""
+  jsfiddle         = ""
+  codepen          = ""
+  # Visual Art Communities
+  deviantart       = ""
+  flickr           = ""
+  behance          = ""
+  dribbble         = ""
+  # Publishing Communities
+  wordpress        = ""
+  medium           = ""
+  # Professional/Business Oriented Communities
+  linkedin         = ""
+  linkedin_company = ""
+  foursquare       = ""
+  xing             = ""
+  slideshare       = ""
+  # Social Networks
+  facebook         = ""
+  googleplus       = ""
+  reddit           = ""
+  quora            = ""
+  youtube          = ""
+  vimeo            = ""
+  whatsapp         = "" # WhatsApp Number
+  instagram        = ""
+  tumblr           = ""
+  twitter          = ""
+  skype            = ""
+  snapchat         = ""
+  pinterest        = ""
+  telegram         = ""
+  discord          = "" # invite link
+  # Email
+  email            = ""
+```
+
+## Custom CSS/JS
+
+The theme provides two ways for custom css/js. The first way is writing your styles to `/assets/css/custom.css` and scripts to `/assets/js/custom.js`. This will merge and minify the styles/scripts with the theme specific files resulting in only one file for the whole website.
+
+```toml
+[params]
+  js=["/js/test_site.js"]
+  jscdn=["https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"]
+  css=["/css/test_site.css"]
+  csscdn=["https://fonts.googleapis.com/css?family=Roboto&display=swap"]
+```
+
+```yaml
+---
+js:
+    - /js/test.js
+jscdn:
+    - https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js
+css:
+    - /css/test.css
+csscdn:
+    - https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900
+---
+```
+
+## Misc
+
+- Dog Photo - Image by [Nikki Luijpers](https://pixabay.com/users/lovechicco-14817111/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5692796) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5692796).
+- [CSS Tricks - A Complete Guide to Dark Mode on the Web](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)

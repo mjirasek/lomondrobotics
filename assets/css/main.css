@@ -1,0 +1,318 @@
+/*******************************************************************************
+ * Reset
+ ******************************************************************************/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*******************************************************************************
+ * Flexbox and base colors
+ ******************************************************************************/
+
+body {
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    color: #222;
+    background: #c0c0c0;
+}
+
+body.dark-theme {
+    color: #eee;
+    background: #121212;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background: #eeeeee;
+}
+
+body.dark-theme .sidebar {
+    background: #333333;
+}
+
+main {
+    background: #ffffff;
+    padding: 2rem;
+}
+
+body.dark-theme main {
+    background: #444444;
+}
+
+/*******************************************************************************
+ * Inner Flexbox
+ ******************************************************************************/
+
+.innerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+}
+
+.innerLeft {
+    flex: 0 0 160px;
+}
+
+.innerRight {
+    flex: 1 1 auto;
+}
+
+.innerRight p {
+    margin: 0 0 0.6rem;
+}
+
+/*******************************************************************************
+ * Desktop
+ ******************************************************************************/
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    main {
+        order: 2;
+        flex: 5;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        order: 1;
+        flex: 1.4;
+    }
+}
+
+/*******************************************************************************
+ * Elements
+ ******************************************************************************/
+
+h1 {
+    color: #2e74b5;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1.4px;
+}
+
+.subtitle {
+    color: #c0c0c0;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+body.dark-theme .subtitle {
+    color: #121212;
+}
+
+h2 {
+    border-bottom: 1px solid #2e74b5;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #2e74b5;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+a,
+a:link,
+a:active {
+    color: #2e74b5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e74b5;
+    text-decoration: underline;
+}
+
+body.dark-theme a {
+    color: #2e74b5;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+section {
+    margin-left: 40px;
+}
+section h2 {
+    margin-left: -40px;
+}
+
+.listspecial li {
+    margin: 0 0 0.6rem;
+}
+
+.listspecial li strong {
+    font-weight: 600;
+    display: inline-block;
+    width: 160px;
+}
+
+.listsimple li {
+    margin: 0 0 0.6rem;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.listsimple ::marker {
+    color: #2e74b5;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.tag {
+    border-radius: 8px;
+    text-align: center;
+    background-color: #2e74b5;
+    color: #ffffff;
+    padding: 2px 8px;
+}
+
+/*******************************************************************************
+ * Navigaton
+ ******************************************************************************/
+
+nav {
+    position: sticky;
+    top: 0px;
+    white-space: nowrap;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:hover,
+nav ul li a:active {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #2e74b5;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #ffffff;
+    transition: all 200ms ease-in-out;
+}
+
+body.dark-theme nav ul li:hover {
+    background: #444444;
+}
+
+nav ul li.active {
+    background: #ffffff;
+    transition: all 200ms ease-in-out;
+}
+
+body.dark-theme nav ul li.active {
+    background: #444444;
+}
+
+/*******************************************************************************
+ * fabs
+ ******************************************************************************/
+.fabs {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.fabs .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #2e74b5;
+    font-size: 1.5rem;
+    color: #2e74b5;
+    text-decoration: none;
+    margin: 4px;
+}
+
+body.dark-theme .fabs .btn {
+    background: #444444;
+}
+
+/*******************************************************************************
+ * print
+ ******************************************************************************/
+
+@media print {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .listsimple ::marker,
+    a,
+    a:visited {
+        color: #000000;
+        background-color: #ffffff;
+        border-color: #000000;
+    }
+    .fabs,
+    .sidebar,
+    footer,
+    .tag,
+    .list-inline-item {
+        display: none;
+    }
+}
+
+/*******************************************************************************
+ * hugo minify
+ ******************************************************************************/
+
+.fa,
+.far,
+.fas {
+    margin-right: 8px;
+}
+
+.fabs .fas {
+    margin-right: 0px;
+}

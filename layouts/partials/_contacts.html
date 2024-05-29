@@ -1,0 +1,14 @@
+{{ $data := (.Scratch.Get "content").Contacts2 }}
+{{ with $data }}
+<section id="section-{{ .Title | urlize }}">
+    <h2><i class="{{ .Icon }}"></i> {{ .Title }}</h2>
+    <ul class="listspecial">
+        {{ range $data.Contacts }}
+            <li><strong><i class="{{ .Icon }}"></i> {{ .Name }}</strong>{{ .Value | markdownify }}</p>
+        {{ end }}
+    </ul>
+    <ul>
+        {{- partial "social.html" $ -}}
+    </ul>
+</section>
+{{ end }}

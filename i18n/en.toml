@@ -1,11 +1,40 @@
-[sidebar_heading_1]
-other = "Just a Subheading"
+[readmore]
+other = "Read more"
 
-[sidebar_button_1]
-other = "Continue Reading"
+[lastupdated]
+other = "last updated"
 
-[sidebar_heading_2]
-other = "Another Subheading"
+[readingTime]
+one = "1 Minute"
+other = "{{.Count}} Minutes"
 
-[sidebar_button_2]
-other = "More Random Links"
+[social]
+other = "Social"
+
+[site]
+other = "Site"
+
+[translations]
+other="Translations"
+
+[themeby]
+other = "Theme by"
+
+[madeby]
+other = "Made by"
+
+[error404]
+other = "We are really sorry but there seems to be nothing here."
+
+[gotohome]
+other = "Go to Homepage"
+
+# Taxonomoy title hack
+[Categories]
+other = "Categories"
+[Categorie]
+other = "Categorie"
+[Tags]
+other = "Tags"
+[Tag]
+other = "Tag"
