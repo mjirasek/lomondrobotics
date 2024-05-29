@@ -12,7 +12,7 @@ items:
     - title: 3D printing
       icon: fa-paper-plane
       content: >
-        Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl
+        Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dap''ibus nisl
         amet mattis, sed a rutrum accumsan sed. Suspendisse eu. test.
     - title: Automation of processes
       icon: fa-pencil-alt
