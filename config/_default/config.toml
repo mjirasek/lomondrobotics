@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://mjirasek.github.io/lomondrobotics/"
 relativeURLs = "True"
 languageCode = "en-us"
 title = "Lomond Robotics"
