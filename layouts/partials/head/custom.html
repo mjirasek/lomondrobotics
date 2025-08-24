@@ -7,26 +7,22 @@
     display: none !important;
 }
 
-/* Hide only the header logo text (Lomond Robotics link to home) */
-#header .logo {
+/* Hide only the logo text, not the entire logo wrapper */
+#header #logo-wrapper h1 {
     display: none !important;
 }
 
-/* Make the header much narrower since logo is hidden */
+/* Make the header narrower but not too narrow to hide the menu */
 #header {
-    height: 4rem !important; /* Reduce significantly from 20rem */
-    padding-bottom: 1rem !important; /* Reduce padding */
-    min-height: 4rem !important; /* Ensure it's not too tall */
+    height: 8rem !important; /* Keep enough height for the menu */
+    padding-bottom: 2rem !important; /* Reduce padding but keep some */
+    min-height: 8rem !important; /* Ensure consistent height */
 }
 
-/* Hide the logo wrapper but keep language switcher */
-#header #logo-wrapper {
-    display: none !important;
-}
-
-/* Keep the navigation menu exactly as it was - don't change its styling */
+/* Keep the navigation menu visible and properly positioned */
 #nav {
     /* Keep all original styling - don't override */
+    margin-top: 0 !important;
 }
 
 /* Adjust the main content position since intro is hidden */
