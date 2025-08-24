@@ -31,7 +31,13 @@
     display: none !important;
 }
 
-/* Adjust the header position since intro is hidden */
+/* Hide the header section (grey horizontal strip) */
 #header {
+    display: none !important;
+}
+
+/* Adjust the main content position since both intro and header are hidden */
+#main {
     margin-top: 0 !important;
+    padding-top: 2rem !important;
 }
