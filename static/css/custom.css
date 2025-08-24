@@ -25,3 +25,13 @@
         padding: 1.25rem 1.75rem !important;
     }
 }
+
+/* Hide the top banner completely */
+#intro {
+    display: none !important;
+}
+
+/* Adjust the header position since intro is hidden */
+#header {
+    margin-top: 0 !important;
+}
