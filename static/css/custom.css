@@ -1,0 +1,27 @@
+/* Custom CSS to increase the size of the Lomond Robotics heading */
+
+#intro h1 {
+    font-size: 7rem !important; /* Increased from 5rem */
+    line-height: 1 !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Also increase the logo size in the header */
+#header .logo {
+    font-size: 3rem !important; /* Increased from 2.25rem */
+    padding: 1.5rem 2rem !important; /* Increased padding for better proportion */
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 736px) {
+    #intro h1 {
+        font-size: 4.5rem !important; /* Increased from 3.25rem */
+        line-height: 1.1 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    #header .logo {
+        font-size: 2.25rem !important; /* Increased from 1.75rem */
+        padding: 1.25rem 1.75rem !important;
+    }
+}
