@@ -12,6 +12,18 @@
     display: none !important;
 }
 
+/* Make the header much narrower since logo is hidden */
+#header {
+    height: 4rem !important; /* Reduce significantly from 20rem */
+    padding-bottom: 1rem !important; /* Reduce padding */
+    min-height: 4rem !important; /* Ensure it's not too tall */
+}
+
+/* Hide the logo wrapper but keep language switcher */
+#header #logo-wrapper {
+    display: none !important;
+}
+
 /* Keep the navigation menu exactly as it was - don't change its styling */
 #nav {
     /* Keep all original styling - don't override */
