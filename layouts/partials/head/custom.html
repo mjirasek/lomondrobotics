@@ -7,12 +7,18 @@
     display: none !important;
 }
 
-/* Hide the header section (grey horizontal strip) */
-#header {
+/* Hide only the header logo (grey horizontal strip with Lomond Robotics) */
+#header .logo {
     display: none !important;
 }
 
-/* Adjust the main content position since both intro and header are hidden */
+/* Keep the navigation menu visible but adjust positioning */
+#nav {
+    margin-top: 0 !important;
+    background: rgba(255,255,255,0.175) !important;
+}
+
+/* Adjust the main content position since intro is hidden */
 #main {
     margin-top: 0 !important;
     padding-top: 2rem !important;
