@@ -587,15 +587,15 @@ a:focus, a:hover {
 
 /* Constrain header logo size */
 .navbar-brand img {
-  height: 36px;
-  max-height: 36px;
+  height: 72px;
+  max-height: 72px;
   width: auto;
 }
 
 @media (max-width: 480px) {
   .navbar-brand img {
-    height: 28px;
-    max-height: 28px;
+    height: 56px;
+    max-height: 56px;
   }
 }
 
