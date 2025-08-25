@@ -1,0 +1,16 @@
+logo = "images/logo.png"
+home = "Home"
+menufixed = true
+
+footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+footerServiceTitle = "Service"
+footerQuicklinkTitle = "Quicklinks"
+footerAboutTitle = "About"
+footerSubscribeTitle = "Subscribe"
+
+[subscription]
+enable = false
+mailchimp_form_action = ""
+mailchimp_form_name = ""
+
+
