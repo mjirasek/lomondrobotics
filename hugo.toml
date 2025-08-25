@@ -1,0 +1,8 @@
+baseURL = "https://michaeljirasek.com/lomondrobotics/"
+languageCode = "en"
+title = "Lomond Robotics"
+paginate = 10
+
+# If you host under a subpath, always use absURL/relURL helpers in templates
+
+
