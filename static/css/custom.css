@@ -31,9 +31,37 @@
     display: none !important;
 }
 
-/* Hide the header section (grey horizontal strip) */
+/* Refine the header (remove heavy grey bar look) */
 #header {
-    display: none !important;
+    position: relative !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+    padding: 0.5rem 0 !important;
+}
+
+/* Make the site title more prominent */
+#header #logo-wrapper #logo {
+    font-size: 2rem !important;
+    letter-spacing: 0.02em !important;
+}
+
+/* Keep nav aligned without excessive height */
+#header #nav > ul > li > a {
+    padding: 0.5rem 0.9rem !important;
+}
+
+/* Place language switcher neatly at top-right */
+#header #multilingual {
+    position: absolute !important;
+    right: 1rem !important;
+    top: 0.6rem !important;
+    z-index: 10 !important;
+}
+
+/* Subtle icon sizing for globe */
+#header #multilingual .fa-globe {
+    font-size: 1rem !important;
 }
 
 /* Adjust the main content position since both intro and header are hidden */
