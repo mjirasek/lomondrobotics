@@ -1,62 +1,61 @@
-[menu]
-  [[menu.nav]]
-  name = "about"
-  url = "about/"
-  weight = 2
+[[nav]]
+name = "about"
+url = "about/"
+weight = 2
 
-  [[menu.nav]]
-  name = "service"
-  url = "service/"
-  weight = 3
+[[nav]]
+name = "service"
+url = "service/"
+weight = 3
 
-  [[menu.nav]]
-  name = "portfolio"
-  url = "portfolio/"
-  weight = 4
+[[nav]]
+name = "portfolio"
+url = "portfolio/"
+weight = 4
 
-  [[menu.nav]]
-  name = "blog"
-  url = "blog/"
-  weight = 5
+[[nav]]
+name = "blog"
+url = "blog/"
+weight = 5
 
-  [[menu.nav]]
-  name = "contact"
-  url = "contact/"
-  weight = 6
+[[nav]]
+name = "contact"
+url = "contact/"
+weight = 6
 
-  [[menu.service]]
-  name = "graphicdesign"
-  url = "service/"
-  weight = 1
+[[service]]
+name = "graphicdesign"
+url = "service/"
+weight = 1
 
-  [[menu.service]]
-  name = "webdesign"
-  url = "service/"
-  weight = 2
+[[service]]
+name = "webdesign"
+url = "service/"
+weight = 2
 
-  [[menu.service]]
-  name = "webdevelopment"
-  url = "service/"
-  weight = 3
+[[service]]
+name = "webdevelopment"
+url = "service/"
+weight = 3
 
-  [[menu.quicklink]]
-  name = "partners"
-  url = "about/"
-  weight = 1
+[[quicklink]]
+name = "partners"
+url = "about/"
+weight = 1
 
-  [[menu.quicklink]]
-  name = "about"
-  url = "about/"
-  weight = 2
+[[quicklink]]
+name = "about"
+url = "about/"
+weight = 2
 
-  [[menu.quicklink]]
-  name = "faqs"
-  url = "about/"
-  weight = 3
+[[quicklink]]
+name = "faqs"
+url = "about/"
+weight = 3
 
-  [[menu.quicklink]]
-  name = "badges"
-  url = "about/"
-  weight = 4
+[[quicklink]]
+name = "badges"
+url = "about/"
+weight = 4
 
 
