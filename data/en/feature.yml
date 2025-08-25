@@ -1,0 +1,21 @@
+enable  : true
+item  :
+  - icon  : tf-ion-ios-cog-outline
+    title : Industrial Automation
+    description : >
+      Design and integration of control systems, PLCs, and robotics to automate
+      manufacturing and lab workflows.
+
+  - icon  : tf-ion-ios-gear-outline
+    title : Custom Robotics
+    description : >
+      Bespoke robotic mechanisms, motion control, and embedded firmware tailored
+      to your application.
+
+  - icon  : tf-ion-ios-printer-outline
+    title : 3D Printing
+    description : >
+      Prototyping and small-batch production using FDM and resin technologies,
+      from CAD to finished parts.
+
+

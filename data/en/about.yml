@@ -1,0 +1,17 @@
+enable  : true
+item    :
+  - positionRight : false
+    image : images/about/about-1.jpg
+    title : Engineering reliable automation
+    description : >
+      We build dependable automation and robotics solutions for labs and
+      manufacturing, focusing on safety, quality, and maintainability.
+
+  - positionRight : true
+    image : images/about/about-2.jpg
+    title : From concept to deployment
+    description : >
+      Mechanical design, electronics, control software, and on-site
+      commissioning — handled end‑to‑end by our team.
+
+

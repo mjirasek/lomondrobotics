@@ -1,6 +1,15 @@
-logo = "images/logo.png"
+logo = "logo.png"
 home = "Home"
 menufixed = true
+ 
+[hero]
+enable = true
+heading = "Automation and Robotics for Real‑World Operations"
+description = "We design and deploy reliable robotic and automation systems for labs and factories."
+videoThumb = "images/slider/slider-1.jpg"
+videoURL = "https://www.youtube.com/embed/dQw4w9WgXcQ"
+btnText = "Contact"
+btnURL = "/contact/"
 
 footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
 footerServiceTitle = "Service"

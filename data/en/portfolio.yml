@@ -1,0 +1,34 @@
+enable  : true
+topTitle: RECENT WORK
+title   : Projects
+subtitle: Selected engagements and prototypes.
+
+filtermenu :
+  - name      : Robotics
+    category  : robotics
+  - name      : Automation
+    category  : automation
+  - name      : Prototyping
+    category  : prototyping
+
+item   :
+  - title : Conveyor vision cell
+    image : images/portfolio/portfolio-1.jpg
+    category  : automation
+  - title : 6‑DOF arm end‑effector
+    image : images/portfolio/portfolio-2.jpg
+    category  : robotics
+  - title : Custom resin fixtures
+    image : images/portfolio/portfolio-3.jpg
+    category  : prototyping
+  - title : PLC retrofit
+    image : images/portfolio/portfolio-4.jpg
+    category  : automation
+  - title : Autonomous cart prototype
+    image : images/portfolio/portfolio-5.jpg
+    category  : robotics
+  - title : Lab device automation
+    image : images/portfolio/portfolio-6.jpg
+    category  : automation
+
+

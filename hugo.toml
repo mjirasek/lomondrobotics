@@ -2,6 +2,7 @@ baseURL = "https://michaeljirasek.com/lomondrobotics/"
 languageCode = "en"
 title = "Lomond Robotics"
 paginate = 10
+staticDir = ["static", "exampleSite/static"]
 
 # If you host under a subpath, always use absURL/relURL helpers in templates
 

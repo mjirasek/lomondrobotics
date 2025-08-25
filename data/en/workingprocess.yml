@@ -1,0 +1,30 @@
+enable  : true
+topTitle: HOW WE WORK
+title   : Our Process
+subtitle: Pragmatic, transparent, and outcome‑driven.
+item    :
+  - number  : 1
+    icon    : tf-ion-ios-search-strong
+    title   : Discovery
+    description : >
+      Requirements, constraints, and success criteria defined with your team.
+
+  - number  : 2
+    icon    : tf-ion-ios-gear-outline
+    title   : Design & Prototype
+    description : >
+      Rapid iterations in CAD and firmware with early test rigs.
+
+  - number  : 3
+    icon    : tf-ion-ios-flask-outline
+    title   : Validate
+    description : >
+      Bench tests and pilot deployment to de‑risk integration.
+
+  - number  : 4
+    icon    : tf-ion-ios-checkmark-outline
+    title   : Deploy
+    description : >
+      Commissioning, documentation, and handover for reliable operation.
+
+
